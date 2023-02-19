@@ -275,10 +275,10 @@ foreach ($files as $v) {
 				// console.log(app.db);
 
 
-				// let testTime	= moment().add(8,'seconds');
-				// app.runRightCountDown(testTime,'Menuju dzuhur');
+				// let testTime = moment().add(8, 'seconds');
+				// app.runRightCountDown(testTime, 'Menuju dzuhur');
 				// app.runFullCountDown(testTime,'iqomah',true);
-				// app.runFullCountDown(testTime,'TEST COUNTER',false);
+				// app.runFullCountDown(testTime, 'TEST COUNTER', false);
 				// app.showDisplayAdzan('Dzuhur');
 				// app.showDisplayKhutbah();
 			},
@@ -366,6 +366,10 @@ foreach ($files as $v) {
 					else if (k == 'asr' && jamDelay < app.asr && jamDelay > app.dhuhr) css = 'active';
 					else if (k == 'dhuhr' && jamDelay < app.dhuhr && jamDelay > app.fajr) css = 'active';
 					else if (k == 'fajr' && (jamDelay < app.fajr || jamDelay > app.isha)) css = 'active'; //diatas isha dan sebelum subuh (beda hari)
+					// insert imsak sebelum fajr
+					if (k == 'fajr') {
+						jadwal += '<div class="row ' + css + '"><div class="col-xs-5">Imsak</div><div class="col-xs-7">' + app.jadwalHariIni.imsak + jadwalPlusIcon + '</div></div>';
+					}
 					jadwal += '<div class="row ' + css + '"><div class="col-xs-5">' + v + '</div><div class="col-xs-7">' + jadwalDipake[k] + jadwalPlusIcon + '</div></div>';
 				});
 				$('#jadwal').html(jadwal);
