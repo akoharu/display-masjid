@@ -544,6 +544,16 @@ foreach ($files as $v) {
 					$('#right-counter .counter>.ii').html(t.minutes + '<span>' + app.db.timeName.Minutes + '</span>');
 					$('#right-counter .counter>.ss').html(t.seconds + '<span>' + app.db.timeName.Seconds + '</span>');
 
+					// play audio
+					if (t.distance == 5) {
+						app.audio.play().then(() => {
+							// already allowed
+						}).catch(() => {
+							console.log('Agar beep bunyi ==> permission chrome : sound harus enable');
+						});
+						// audio.play();
+					}
+
 					$('#right-counter').slideDown();
 					$('#quote').hide();
 
