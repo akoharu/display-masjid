@@ -60,7 +60,7 @@ foreach ($files as $v) {
 	</style>
 </head>
 
-<body>
+<body onclick="fullscreen()">
 	<div id="preloader">
 		<div id="status">&nbsp;</div>
 	</div>
@@ -589,6 +589,10 @@ foreach ($files as $v) {
 			}
 		}
 		app.initialize();
+
+		function fullscreen() {
+			document.documentElement.webkitRequestFullScreen();
+		}
 	</script>
 </body>
 
