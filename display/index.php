@@ -370,6 +370,10 @@ foreach ($files as $v) {
 					if (k == 'fajr') {
 						jadwal += '<div class="row ' + css + '"><div class="col-xs-5">Imsak</div><div class="col-xs-7">' + app.jadwalHariIni.imsak + jadwalPlusIcon + '</div></div>';
 					}
+					// insert sunrise sebelum dhuhr
+					if (k == 'dhuhr') {
+						jadwal += '<div class="row"><div class="col-xs-5">Terbit</div><div class="col-xs-7">' + app.jadwalHariIni.sunrise + jadwalPlusIcon + '</div></div>';
+					}
 					jadwal += '<div class="row ' + css + '"><div class="col-xs-5">' + v + '</div><div class="col-xs-7">' + jadwalDipake[k] + jadwalPlusIcon + '</div></div>';
 				});
 				$('#jadwal').html(jadwal);
