@@ -1175,7 +1175,7 @@ isha		= 18°
 		$prayName 	= $db['prayName'];
 		$set = [
 			'id'	=> 'prayName',
-			'title'	=> 'Nama sholat',
+			'title'	=> 'Nama waktu',
 			'open'	=> false
 		];
 		echo $this->generateTextForm($prayName, $set);
@@ -1183,7 +1183,7 @@ isha		= 18°
 		$timeName 	= $db['timeName'];
 		$set = [
 			'id'	=> 'timeName',
-			'title'	=> 'Nama waktu',
+			'title'	=> 'Nama jam',
 			'open'	=> false
 		];
 		echo $this->generateTextForm($timeName, $set);

@@ -366,14 +366,7 @@ foreach ($files as $v) {
 					else if (k == 'asr' && jamDelay < app.asr && jamDelay > app.dhuhr) css = 'active';
 					else if (k == 'dhuhr' && jamDelay < app.dhuhr && jamDelay > app.fajr) css = 'active';
 					else if (k == 'fajr' && (jamDelay < app.fajr || jamDelay > app.isha)) css = 'active'; //diatas isha dan sebelum subuh (beda hari)
-					// insert imsak sebelum fajr
-					if (k == 'fajr') {
-						jadwal += '<div class="row ' + css + '"><div class="col-xs-5">Imsak</div><div class="col-xs-7">' + app.jadwalHariIni.imsak + jadwalPlusIcon + '</div></div>';
-					}
-					// insert sunrise sebelum dhuhr
-					if (k == 'dhuhr') {
-						jadwal += '<div class="row"><div class="col-xs-5">Terbit</div><div class="col-xs-7">' + app.jadwalHariIni.sunrise + jadwalPlusIcon + '</div></div>';
-					}
+
 					jadwal += '<div class="row ' + css + '"><div class="col-xs-5">' + v + '</div><div class="col-xs-7">' + jadwalDipake[k] + jadwalPlusIcon + '</div></div>';
 				});
 				$('#jadwal').html(jadwal);
@@ -391,6 +384,9 @@ foreach ($files as $v) {
 					//Normal 	: waitAdzanCountDown-adzan-iqomah-sholat-nextPrayCountDown
 					//jumat 	: waitAdzanCountDown-adzan-khutbah-sholat-nextPrayCountDown
 					//tarawih 	: waitAdzanCountDown-adzan-iqomah-sholat-isya-Tarawih(hanya durasi tarawih)-nextPrayCountDown
+
+					// if imsak, sunrise, skip
+					if (k == 'imsak' || k == 'sunrise') return true;
 
 					let t = moment(app[k]); //bikin variable baru t ==> jika ditulis let t	= app[k]; ==> jika di tambah / kurang, variable app[k] ikut berubah
 					let jadwal = t.format('YYYY-MM-DD HH:mm:ss');

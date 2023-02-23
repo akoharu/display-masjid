@@ -1,1 +1,119 @@
-{"akses":{"user":"admin","pass":"password"},"setting":{"nama":"Musholla Ad-Din","lokasi":"Bekasi","latitude":-6.14,"longitude":106.59,"timeZone":7,"dst":"0"},"prayTimesMethod":"0","prayTimesAdjust":{"fajr":20,"dhuhr":"","asr":"Standard","maghrib":"","isha":18},"prayTimesTune":{"fajr":0,"dhuhr":0,"asr":0,"maghrib":0,"isha":0},"prayName":{"fajr":"Subuh","dhuhr":"Dzuhur","asr":"Ashar","maghrib":"Maghrib","isha":"Isya'"},"timeName":{"Hours":"Jam","Minutes":"Menit","Seconds":"Detik"},"dayName":{"Sunday":"Minggu","Monday":"Senin","Tuesday":"Selasa","Wednesday":"Rabu","Thursday":"Kamis","Friday":"Jum'at","Saturday":"Sabtu"},"monthName":{"January":"Januari","February":"Februari","March":"Maret","April":"April","May":"Mei","June":"Juni","July":"Juli","August":"Agustus","September":"September","October":"Oktober","November":"November","December":"Desember"},"timer":{"info":5,"wallpaper":15,"wait_adzan":1,"adzan":3,"sholat":20},"iqomah":{"fajr":10,"dhuhr":10,"asr":10,"maghrib":10,"isha":10},"jumat":{"active":true,"duration":60,"text":"Harap diam saat khotib khutbah"},"tarawih":{"active":true,"duration":180},"info":[["Aplikasi Display-Masjid","Selamat datang di aplikasi Display Masjid, aplikasi baru saja diinstal dan belum ada data, silakan masuk ke menu admin untuk mengganti data","Display|Masjid V.1.0.0",true],["Info non-active","Ini contoh info tidak aktif","active = false",false],["\u0633\u064e\u0648\u064f\u0651\u0648\u0627 \u0635\u064f\u0641\u064f\u0648\u0641\u064e\u0643\u064f\u0645\u0652 , \u0641\u064e\u0625\u0650\u0646\u064e\u0651 \u062a\u064e\u0633\u0652\u0648\u0650\u064a\u064e\u0629\u064e \u0627\u0644\u0635\u064e\u0651\u0641\u0650\u0651 \u0645\u0650\u0646\u0652 \u062a\u064e\u0645\u064e\u0627\u0645\u0650 \u0627\u0644\u0635\u064e\u0651\u0644\u0627\u0629\u0650","Luruskanlah shaf-shaf kalian, karena lurusnya shaf adalah kesempurnaan shalat","HR. Bukhari no.690, Muslim no.433",true]],"running_text":["Running test #1","Running test #2","Running test #3"]}
+{
+  "akses": { "user": "admin", "pass": "password" },
+  "setting": {
+    "nama": "MRCC",
+    "lokasi": "Bogor",
+    "latitude": "-6.399440",
+    "longitude": "106.930519",
+    "timeZone": "7",
+    "dst": "0"
+  },
+  "prayTimesMethod": "0",
+  "prayTimesAdjust": {
+    "fajr": "20",
+    "dhuhr": "",
+    "asr": "Standard",
+    "maghrib": "",
+    "isha": "18"
+  },
+  "prayTimesTune": {
+    "imsak": "2",
+    "fajr": "2",
+    "sunrise": "2",
+    "dhuhr": "2",
+    "asr": "2",
+    "sunset": "2",
+    "maghrib": "2",
+    "isha": "2"
+  },
+  "prayName": {
+    "imsak": "Imsak",
+    "fajr": "Subuh",
+    "sunrise": "Terbit",
+    "dhuhr": "Dzuhur",
+    "asr": "Ashar",
+    "maghrib": "Maghrib",
+    "isha": "Isya'"
+  },
+  "timeName": { "Hours": "Jam", "Minutes": "Menit", "Seconds": "Detik" },
+  "dayName": {
+    "Sunday": "Minggu",
+    "Monday": "Senin",
+    "Tuesday": "Selasa",
+    "Wednesday": "Rabu",
+    "Thursday": "Kamis",
+    "Friday": "Jum'at",
+    "Saturday": "Sabtu"
+  },
+  "monthName": {
+    "January": "Januari",
+    "February": "Februari",
+    "March": "Maret",
+    "April": "April",
+    "May": "Mei",
+    "June": "Juni",
+    "July": "Juli",
+    "August": "Agustus",
+    "September": "September",
+    "October": "Oktober",
+    "November": "November",
+    "December": "Desember"
+  },
+  "timer": {
+    "info": 5,
+    "wallpaper": 15,
+    "wait_adzan": 1,
+    "adzan": 3,
+    "sholat": 20
+  },
+  "iqomah": { "fajr": 10, "dhuhr": 10, "asr": 10, "maghrib": 10, "isha": 10 },
+  "jumat": {
+    "active": "1",
+    "duration": "60",
+    "text": "Harap diam saat khotib khutbah"
+  },
+  "tarawih": { "active": true, "duration": 180 },
+  "info": [
+    [
+      "Ahlan wa sahlan",
+      "Selamat datang di Masjid Raya Cibubur Country",
+      "DKM Masjid Raya Cibubur Country",
+      "1"
+    ],
+    [
+      "\u0633\u064e\u0648\u064f\u0651\u0648\u0627 \u0635\u064f\u0641\u064f\u0648\u0641\u064e\u0643\u064f\u0645\u0652 , \u0641\u064e\u0625\u0650\u0646\u064e\u0651 \u062a\u064e\u0633\u0652\u0648\u0650\u064a\u064e\u0629\u064e \u0627\u0644\u0635\u064e\u0651\u0641\u0650\u0651 \u0645\u0650\u0646\u0652 \u062a\u064e\u0645\u064e\u0627\u0645\u0650 \u0627\u0644\u0635\u064e\u0651\u0644\u0627\u0629\u0650",
+      "Luruskanlah shaf-shaf kalian, karena lurusnya shaf adalah kesempurnaan shalat",
+      "HR. Bukhari no.690, Muslim no.433",
+      "1"
+    ],
+    [
+      "ZAKAT",
+      "at-thohuru ( membersihkan atau mensucikan )\r\nal-barakatu ( dilimpahkan keberkahan oleh allah swt )\r\nan-numuw ( tumbuh dan berkembang )\r\nas-sholahu ( beres atau keberesan )",
+      "",
+      "1"
+    ],
+    [
+      "KAJIAN SIRAH NABAWIYAH",
+      "SELASA & JUM\u2019AT BA\u2019DA MAGHRIB\r\nPemateri: Ustadz Harfizal MA",
+      "Bidang Dakwah MRCC",
+      "1"
+    ],
+    [
+      "JADWAL KHUTBAH JUM\u2019AT ",
+      "24 FEBRUARI 2023\r\nIMAM & KHOTIB: Ustadz Abi Sam\r\nBILAL: Ustadz Haunan ",
+      "Bidang Dakwah MRCC",
+      "1"
+    ],
+    [
+      "KAJIAN SABTU SUBUH",
+      "25 FEBRUARI 2023\r\nPEMATERI: Ustadz Ahmad",
+      "Bidang Dakwah MRCC",
+      "1"
+    ]
+  ],
+  "running_text": [
+    "Bagi Jamaah yang ingin infaq dan shodaqoh bisa langsung menghubungi DKM-MRCC",
+    "No Rekening BNI 6076076081",
+    "A/N MASJID RAYA CIBUBUR COUNTRY"
+  ]
+}
