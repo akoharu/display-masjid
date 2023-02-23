@@ -54,10 +54,13 @@ foreach ($files as $v) {
 	<!-- Bootstrap -->
 	<link href="./css/bootstrap.min.css" rel="stylesheet">
 	<link href="./css/font-awesome.min.css" rel="stylesheet">
-	<link href="./css/style.css" rel="stylesheet">
-	<style>
-
-	</style>
+	<script>
+		// load style css with no cache
+		var css = document.createElement('link');
+		css.rel = 'stylesheet';
+		css.href = './css/style.css?<?php echo time(); ?>';
+		document.getElementsByTagName('head')[0].appendChild(css);
+	</script>
 </head>
 
 <body onclick="fullscreen()">
